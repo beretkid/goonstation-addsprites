@@ -1388,6 +1388,61 @@ ABSTRACT_TYPE(/datum/job/civilian)
 	/obj/item/currency/buttcoin,
 	/obj/item/currency/spacecash/fivehundred)
 
+
+/datum/job/special/pilot
+	name = "Pilot"
+	limit = 2
+	wages = 0
+	trait_list = list("pilot")
+	add_to_manifest = FALSE
+	low_priority_job = TRUE
+	slot_card = null
+	slot_head = list(\
+	/obj/item/clothing/head/green = 1,
+	/obj/item/clothing/head/red = 1,
+	/obj/item/clothing/head/beret/random_color = 1,
+	/obj/item/clothing/head/basecap/black = 1,
+	/obj/item/clothing/head/basecap/blue = 1,
+	null = 5 )
+
+	slot_mask = null
+
+	slot_ears = null
+
+	slot_suit = null
+
+	slot_jump = list(\
+	 /obj/item/clothing/under/misc/collar_shirt/white = 3,
+	 /obj/item/clothing/under/misc/fish = 1,
+	 /obj/item/clothing/under/misc/bandshirt = 1.5,
+	 /obj/item/clothing/under/misc/casualjeanswb = 1,
+	 /obj/item/clothing/under/misc/casualjeansgrey = 1,
+	 /obj/item/clothing/under/misc/casualjeansyel = 1,
+	 /obj/item/clothing/under/misc/tiedye = 2,
+	 /obj/item/clothing/under/misc/tourist = 2 )
+
+	slot_glov = list(\
+	null = 1,
+	/obj/item/clothing/gloves/black = 1,
+	/obj/item/clothing/gloves/fingerless = 1)
+
+	slot_foot = list(\
+	/obj/item/clothing/shoes/brown = 6,
+	/obj/item/clothing/shoes/red = 1,
+	/obj/item/clothing/shoes/black = 4)
+
+	slot_back = list(\
+	/obj/item/storage/backpack = 3,
+	/obj/item/storage/backpack/satchel = 2)
+
+	slot_belt = /obj/item/device/pda2
+
+	slot_poc1 = null
+
+	slot_poc2 = /obj/item/currency/spacecash/fivehundred 
+
+	items_in_backpack = null
+
 /datum/job/special/souschef
 	name = "Sous-Chef"
 	limit = 1
