@@ -644,7 +644,8 @@ Equip items from body traits.
 
 		var/obj/item/device/gps/GPSDEVICE = new /obj/item/device/gps(src.loc)
 		src.force_equip(GPSDEVICE, SLOT_IN_BACKPACK, TRUE)
-
+		var/obj/item/device/pda2/pda = locate() in src
+		src.u_equip(pda)
 
 	var/T = pick(trinket_safelist)
 	var/obj/item/trinket = null
