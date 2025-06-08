@@ -911,7 +911,7 @@ ABSTRACT_TYPE(/datum/trait/job)
 	icon_state = "pilot"
 	category = list("background")
 	points = 0
-
+        unselectable = TRUE
 
 /datum/trait/sleepy
 	name = "Heavy Sleeper"
